@@ -19,17 +19,15 @@ export const Navbar = () => {
   return (
     <StyledNavbar>
       <Box component='div' className='navbar-wrapper'>
-        <Box component='div' className='navbar-logo'><img src={spaceX} alt=''/></Box>
+        <Box component='div' className='navbar-logo'><NavLink to='/'><img src={spaceX} alt=''/></NavLink></Box>
         <Box component='div' className='navbar-center-nav-list'>
           {
             centerNavList.map( link => <NavLink key={link.value} to={link.link}>{link.value}</NavLink> )
           }          
         </Box>
         <Box component='div' className='navbar-list-favorite-sign'>
-          <FavoriteButton/>
+          <NavLink to='/favorite'><FavoriteButton/></NavLink>
           <BlueButton text='SIGN IN'/>
-          {/* <Box component='div' className='navbar-favorite'><img src={heart} alt=''/></Box> */}
-          {/* <Box component='div' className='navbar-sign-in'>SIGN IN</Box> */}
         </Box>
       </Box>
     </StyledNavbar>

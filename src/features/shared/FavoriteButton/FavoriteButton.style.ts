@@ -10,8 +10,8 @@ justify-content: center;
 align-items: center;
 padding: 10px;
 /* gap: 10px; */
-
-background: #ECECEC;
+cursor: pointer;
+background: ${ props => props.theme.background };
 & > img {
   height: 19px;
   width: 20px;

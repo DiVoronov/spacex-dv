@@ -24,4 +24,6 @@ text-transform: uppercase;
 color: #000000;
 white-space: nowrap;
 
+cursor: pointer;
+
 `;

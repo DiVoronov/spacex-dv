@@ -7,7 +7,7 @@ export const MainPage = () => {
   return (
     <Box>
       <BigBanner/>
-      <CardsHolder/>
+      <CardsHolder type='main'/>
     </Box>
   );
 };
