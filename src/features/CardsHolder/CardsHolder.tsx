@@ -13,6 +13,8 @@ import popularTitle from './pic/popularTitle.png';
 
 import { useQuery, gql } from '@apollo/client';
 import { CustomSlider } from '../shared/Slider/Slider';
+import { useAppDispatch } from '../../app/hooks';
+import { removeAll } from '../../app/Slices/favoriteSlice';
 
 export interface ICard {
   photo: string
@@ -72,6 +74,9 @@ export const CardsHolder: React.FC<ICardsHolderProps> = ({ type, favoriteCards }
     {photo: bannerMan, id: favoriteCards[2]},
   ];
 
+  const dispatch = useAppDispatch();
+  const handleRemoveFromFavorite = () => {dispatch(removeAll())};
+
   return (
     <StyledCardsHolder>
       {
@@ -90,9 +95,9 @@ export const CardsHolder: React.FC<ICardsHolderProps> = ({ type, favoriteCards }
         :
         <Box component='div' className='cards-holder-wrapper'>
           <Box component='div' className='cards-holder-favorite-top'>
-            <Box component='div' className='cards-holder-title'>Clear all</Box>
+            <Box component='div' className='cards-holder-favorite-title' onClick={handleRemoveFromFavorite}>Clear all</Box>
           </Box>
-          <Box component='div' className='cards-holder-field' sx={{display: 'flex'}}>
+          <Box component='div' className='cards-holder-field' sx={{display: 'flex', justifyContent: 'center'}}>
             {
               favoriteCards && favoriteCardsWithPhoto?.map( card => <Card key={card.photo} currentId={card}/>)
             }

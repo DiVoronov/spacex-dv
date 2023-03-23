@@ -26,7 +26,7 @@ export const Navbar = () => {
           }          
         </Box>
         <Box component='div' className='navbar-list-favorite-sign'>
-          <NavLink to='/favorite'><FavoriteButton/></NavLink>
+          <NavLink to='/favorite'><FavoriteButton role='favorite'/></NavLink>
           <BlueButton text='SIGN IN'/>
         </Box>
       </Box>

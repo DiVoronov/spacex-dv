@@ -10,7 +10,7 @@ max-width: 380px;
 margin: 0px .5rem;
 
 & .empty-width {
-  width: 380px;
+  width: 350px;
 }
 
 & .card-wrapper {

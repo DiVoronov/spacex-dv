@@ -1,7 +1,7 @@
 import React from "react";
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState: string[] = ['5e9d0d96eda699382d09d1ee'];
+const initialState: string[] = [];
 
 const favoriteSlice = createSlice({
   name: "favorite",
@@ -18,8 +18,12 @@ const favoriteSlice = createSlice({
       state.splice(index, 1);
       return state;
     },
+    removeAll (state) {
+      state = [];
+      return state;
+    },
   }
 });
 
-export const { addToFavorite, removeFromFavorite } = favoriteSlice.actions;
+export const { addToFavorite, removeFromFavorite, removeAll } = favoriteSlice.actions;
 export const favoriteReducer = favoriteSlice.reducer;

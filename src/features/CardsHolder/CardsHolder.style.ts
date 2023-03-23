@@ -20,26 +20,30 @@ width: 100%;
     gap: 1rem;
   } */
 
-  & .cards-holder-top {
+  & .cards-holder-favorite-top {
     display: flex;
-    width: 1025px;
-    justify-content: space-between;
+    width: 1170px;
+    justify-content: flex-end;
 
-    & .cards-holder-title {
-      width: 465px;
-      height: 38px;
-
-      font-family: 'Syne';
+    & .cards-holder-favorite-title{
+      font-family: 'Lato';
       font-style: normal;
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 38px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
       display: flex;
       align-items: center;
       text-align: center;
-      text-transform: uppercase;
+      color: #556B84;
+      cursor: pointer;
+      opacity: .7;
+      transition: all .3s;
+      padding: .5rem;
 
-      color: #1E1E1E;
+      &:hover {
+        transform: scale(1.07);
+        opacity: 1;
+      } 
     }
 
     & .cards-holder-buttons {

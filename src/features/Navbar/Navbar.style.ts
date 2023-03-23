@@ -32,6 +32,12 @@ z-index: 1000;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    transition: border .4s, transform .4s;
+
+    &:hover {
+      border-bottom: 1px solid #fff;
+      transform: scale(1.1);
+    }
 
     &:active {
       border-bottom: 1px solid #fff;
