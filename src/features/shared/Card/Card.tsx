@@ -1,9 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { StyledCard } from './Card.style';
-import { NavLink } from 'react-router-dom';
-import heart from './pic/heart.png';
-import spaceX from './pic/spaceX.png';
 import { FavoriteButton } from '../FavoriteButton/FavoriteButton';
 import { BlueButton } from '../BlueButton/BlueButton';
 import { ICard, IFavoriteCard } from '../../CardsHolder/CardsHolder';
@@ -30,8 +27,6 @@ export const Card: React.FC<ICardProps> = ({ currentCard, currentId }) => {
 
   const { loading, error, data } = useQuery(GET_ROCKETS_BY_ID, {variables: {rocketId: currentId?.id}});
 
-  data && console.log(loading, error, data);
-
   const dispatch = useAppDispatch();
   const handleAddToFavorite = (id: string) => {currentCard && dispatch(addToFavorite(id))};
   const handleRemoveFromFavorite = (id: string) => {currentId && dispatch(removeFromFavorite(id))};
@@ -44,8 +39,8 @@ export const Card: React.FC<ICardProps> = ({ currentCard, currentId }) => {
         <Box component='div' className={`card-wrapper ${currentCard || currentId?.id ? '' : 'empty-width'}`}>
           <Box component='div' className='card-photo'><img src={currentCard ? currentCard.photo : currentId?.id ? currentId?.photo : ''} alt=''/></Box>
           <Box component='div' className='card-info'>
-            <Box component='div' className='card-title'>{ currentCard ? currentCard.title : data && data?.rocket.name }</Box>
-            <Box component='div' className='card-description'>{ currentCard ? currentCard.description : data && data?.rocket.description }</Box>
+            <Box component='div' className='card-title'>{ currentCard ? currentCard.title : loading ? 'Loading data...' : error ? 'Error, please, reload a page' : data && data?.rocket.name }</Box>
+            <Box component='div' className='card-description'>{ currentCard ? currentCard.description : loading ? 'Loading data...' : error ? 'Error, please, reload a page' : data && data?.rocket.description }</Box>
           </Box>
           {
             currentCard 
@@ -68,12 +63,10 @@ export const Card: React.FC<ICardProps> = ({ currentCard, currentId }) => {
             :
             <></>
           }
-          
         </Box>
         :
         <></>
       }
-      
     </StyledCard>
   );
 };

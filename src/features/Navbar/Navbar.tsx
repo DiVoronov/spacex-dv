@@ -2,7 +2,6 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { StyledNavbar } from './Navbar.style';
 import { NavLink } from 'react-router-dom';
-import heart from './pic/heart.png';
 import spaceX from './pic/spaceX.png';
 import { FavoriteButton } from '../shared/FavoriteButton/FavoriteButton';
 import { BlueButton } from '../shared/BlueButton/BlueButton';

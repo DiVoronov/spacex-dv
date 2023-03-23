@@ -92,8 +92,8 @@ position: relative;
     align-items: center;
     flex-wrap: wrap;
 
-    & > div {
-    
+    & > a {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -114,7 +114,6 @@ position: relative;
 
         color: #FFFFFF;
         text-shadow: #000 1px 0px 1px, #000 0px 1px 1px, #000 0px -1px 1px, #000 -1px 0px 1px;
-        /* text-shadow: -2px 0 2px #8c1b21, 0 2px 2px #8c1b21, -2px 0 2px #8c1b21, 0 2px 2px #8c1b21,; */
       }
 
       & img {
@@ -124,26 +123,6 @@ position: relative;
     }
     
   }
-  
-  /* & .bigBanner-switch-circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    & > div {
-      display: flex;
-      gap: 9px;
-    }
-  } */
 }
 
 

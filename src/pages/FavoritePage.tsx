@@ -4,17 +4,6 @@ import { Box } from '@mui/material';
 import { CardsHolder } from '../features/CardsHolder/CardsHolder';
 import { useSelector } from 'react-redux';
 import { RootState } from '../app/store';
-import { useQuery, gql } from '@apollo/client';
-
-const GET_ROCKETS_BY_ID = gql`
-  query GetRocket($rocketId: ID!) {
-    rocket (id: $rocketId) {
-      id
-      description
-      name
-    }
-  }
-`;
 
 export const FavoritePage = () => {
 
@@ -31,13 +20,6 @@ export const FavoritePage = () => {
       return [ '', '', '' ];
     };
   };
-
-  // const useParsedRocketsFromFavorite = favorites.map( id => {
-  //   const { loading, error, data } = useQuery(GET_ROCKETS_BY_ID, {variables: {rocketId: idd}});
-
-  // });
-  
-  // console.log(loading, error, data);
 
   return (
     <Box>

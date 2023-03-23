@@ -43,53 +43,10 @@ z-index: 1000;
       border-bottom: 1px solid #fff;
     }
   }
-
-  
 }
 & .navbar-list-favorite-sign {
   display: flex;
   gap: 12px;
-  /* height: 53px; */
   width: 220px;
-
-  /* & .navbar-favorite {
-    width: 53px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-
-    background: #ECECEC;
-    & > img {
-      height: 19px;
-      width: 20px;
-    }
-  } */
-
-  /* & .navbar-sign-in {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 163px;
-    background: #D3EAFF;
-    padding: 12px 0px;
-
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #000000;
-
-  } */
 }
 `;

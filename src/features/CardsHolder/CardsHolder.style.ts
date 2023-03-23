@@ -13,13 +13,6 @@ width: 100%;
   padding: 9rem 3rem;
   gap: 2rem;
 
-  /* & .cards-holder-field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  } */
-
   & .cards-holder-favorite-top {
     display: flex;
     width: 1170px;
@@ -54,14 +47,9 @@ width: 100%;
       align-items: center;
       padding: 10px;
       gap: 10px;
-
-      /* width: 44px;
-      height: 44px; */
     }
-
-    
   }
-  
+
   & .cards-holder-switch-circle {
 
     display: flex;
@@ -77,7 +65,4 @@ width: 100%;
     }
   }
 }
-
-
-
 `;

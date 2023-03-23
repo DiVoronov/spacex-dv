@@ -22,7 +22,6 @@ export const CustomSlider: React.FC<ICustomSliderProps> = ({ cards }) => {
   const finalCards = [ ...cards, ...cards ];
   
   const settings = {
-    // dots: true,
     className: "center",
     infinite: true,
     speed: 500,
@@ -38,24 +37,12 @@ export const CustomSlider: React.FC<ICustomSliderProps> = ({ cards }) => {
     <StyledSlider>
       <Box component='div' className='cards-holder-top'>
         <Box component='div' className='cards-holder-title'><img src={popularTitle} alt=''/></Box>
-        {/* <Box component='div' className='cards-holder-buttons'>
-          <Box component='div' className='cards-holder-button-prev'><img src={prev} alt=''/></Box>
-          <Box component='div' className='cards-holder-button-next'><img src={next} alt=''/></Box>
-        </Box> */}
       </Box>
-      {/* <Box component='div' className='cards-holder-buttons'>
-        <Box component='div' className='cards-holder-button-prev'><img src={prev} alt=''/></Box>
-        <Box component='div' className='cards-holder-button-next'><img src={next} alt=''/></Box>
-      </Box> */}
-      {/* <Box component='div' className='slider-wrapper'> */}
-        {/* <Box component='div' className='cards-holder-field'> */}
-          <Slider {...settings}>
-            {
-              finalCards.map( card => <Card key={card.id} currentCard={card}/>)
-            }
-          </Slider>
-        {/* </Box> */}
-      {/* </Box> */}
+      <Slider {...settings}>
+        {
+          finalCards.map( card => <Card key={card.id} currentCard={card}/>)
+        }
+      </Slider>
     </StyledSlider>
   );
 };

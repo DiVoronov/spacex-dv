@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import bannerSpace from '../shared/pic/bannerSpace.png';
 import bannerBlue from '../shared/pic/bannerBlue.png';
 import bannerMan from '../shared/pic/bannerMan.png';
@@ -7,10 +7,6 @@ import { StyledCardsHolder } from './CardsHolder.style';
 import circleBlackOne from './pic/circleBlackFill.png';
 import circleBlackEmpty from './pic/circleBlackEmpty.png';
 import { Card } from '../shared/Card/Card';
-import prev from './pic/prev.png';
-import next from './pic/next.png';
-import popularTitle from './pic/popularTitle.png';
-
 import { useQuery, gql } from '@apollo/client';
 import { CustomSlider } from '../shared/Slider/Slider';
 import { useAppDispatch } from '../../app/hooks';
@@ -104,7 +100,6 @@ export const CardsHolder: React.FC<ICardsHolderProps> = ({ type, favoriteCards }
           </Box>
         </Box>
       }
-      
     </StyledCardsHolder>
   );
 };

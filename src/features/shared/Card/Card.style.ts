@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const StyledCard = styled.div`
 position: relative;
-/* width: 28%; */
 height: 572px;
 border: 1px solid #D3EAFF;
 max-width: 380px;
@@ -14,8 +13,6 @@ margin: 0px .5rem;
 }
 
 & .card-wrapper {
-  /* width: 411px;
-  height: 572px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,13 +22,10 @@ margin: 0px .5rem;
   max-width: 411px;
 
   & .card-photo {
-    /* width: 100%; */
     overflow: hidden;
 
     & > img {
-      /* width: 380px; */
       height: 250px;
-
     }
   }
 
@@ -43,8 +37,6 @@ margin: 0px .5rem;
     gap: 16px;
     justify-content: center;
     height: 30%;
-    /* height: 103px; */
-
 
     & .card-title {
       font-family: 'Syne';
@@ -67,7 +59,6 @@ margin: 0px .5rem;
       font-size: 20px;
       line-height: 29px;
       display: flex;
-      /* align-items: center; */
       text-align: justify;
       color: #556B84;
       max-height: 300px;

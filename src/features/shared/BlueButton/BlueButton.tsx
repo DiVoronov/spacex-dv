@@ -3,13 +3,12 @@ import { StyledBlueButton } from './BlueButton.style';
 
 interface IBlueButtonProps {
   text: string
-  fn?: () => void
 };
 
-export const BlueButton: React.FC<IBlueButtonProps> = ({ text, fn }) => {
+export const BlueButton: React.FC<IBlueButtonProps> = ({ text }) => {
 
   return (
-    <StyledBlueButton onClick={fn}>
+    <StyledBlueButton>
       { text }
     </StyledBlueButton>
   );

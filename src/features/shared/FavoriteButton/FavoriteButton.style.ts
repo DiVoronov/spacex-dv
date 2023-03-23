@@ -10,7 +10,6 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 10px;
-/* gap: 10px; */
 cursor: pointer;
 background: ${ props => props.theme.background };
 z-index: 1000;

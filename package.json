@@ -23,6 +23,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.9",
@@ -57,6 +58,7 @@
   "devDependencies": {
     "@graphql-codegen/cli": "^3.2.2",
     "@graphql-codegen/client-preset": "^2.1.1",
+    "@types/react-scroll": "^1.8.6",
     "@types/react-slick": "^0.23.10",
     "typescript": "^5.0.2"
   }

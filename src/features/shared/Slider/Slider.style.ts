@@ -13,12 +13,10 @@ width: 98%;
   &::before {
     content: none;
   }
-  
 }
 
 & .slick-next {
   position: absolute;
-  /* top: 0px; */
   left: 93%;
 }
 

@@ -1,7 +1,5 @@
 import React from 'react';
 import bannerSpace from '../shared/pic/bannerSpace.png';
-import bannerBlue from '../shared/pic/bannerBlue.png';
-import bannerMan from '../shared/pic/bannerMan.png';
 import { Box } from '@mui/material';
 import { StyledBigBanner } from './BigBanner.style';
 import title from './pic/title.png';
@@ -9,7 +7,7 @@ import you from './pic/you.png';
 import arrowDown from './pic/arrowDown.png';
 import circleOne from '../shared/pic/circleOne.png';
 import circleEmpty from '../shared/pic/circleEmpty.png';
-
+import { Link } from 'react-scroll';
 
 export const BigBanner = () => {
 
@@ -39,18 +37,11 @@ export const BigBanner = () => {
             </Box>
           </Box>
           <Box component='div' className='bigBanner-explore-button'>
-            <Box>
+            <Link to='cards-holder-wrapper' spy smooth duration={800}>
               <Box>Explore tours</Box>
               <img src={arrowDown} alt=''/>
-            </Box>
+            </Link>
           </Box>
-          {/* <Box component='div' className='bigBanner-switch-circle'>
-            <Box>
-              {
-                orderCircles.map( img => img.value )
-              }
-            </Box>
-          </Box> */}
         </Box>
       </Box>
     </StyledBigBanner>

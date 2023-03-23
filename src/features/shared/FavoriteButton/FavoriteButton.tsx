@@ -1,8 +1,7 @@
 import React from 'react';
 import { StyledFavoriteButton } from './FavoriteButton.style';
 import deletePic from './pic/deletePic.png';
-import { useLocation, useParams } from 'react-router-dom';
-import { Box } from '@mui/material';
+import { useLocation } from 'react-router-dom';
 
 interface IFavoriteButtonProps {
   fn?: (id: string) => void
@@ -16,8 +15,6 @@ export const FavoriteButton: React.FC<IFavoriteButtonProps> = ({ fn, role }) => 
   const theme = {
     background: (loc.pathname === '/favorite' && role === 'favorite') ? '#DD377D' : '#ECECEC'
   };
-
-  // const propsFunction = () => { fn && fn()}
 
   return (
     <StyledFavoriteButton theme={theme}>
