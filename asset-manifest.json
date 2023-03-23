@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/spacex-dv/static/css/main.68843438.css",
+    "main.js": "/spacex-dv/static/js/main.3ffef395.js",
+    "static/media/bannerBlue.png": "/spacex-dv/static/media/bannerBlue.07fb3f8c1686aca2ddd6.png",
+    "static/media/bannerSpace.png": "/spacex-dv/static/media/bannerSpace.0bd14e96ee9f4d0f6f48.png",
+    "static/media/bannerMan.png": "/spacex-dv/static/media/bannerMan.6cb16db8ed21a9418fa4.png",
+    "static/media/slick.svg": "/spacex-dv/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/spacex-dv/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/spacex-dv/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/spacex-dv/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/spacex-dv/index.html",
+    "main.68843438.css.map": "/spacex-dv/static/css/main.68843438.css.map",
+    "main.3ffef395.js.map": "/spacex-dv/static/js/main.3ffef395.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68843438.css",
+    "static/js/main.3ffef395.js"
+  ]
+}
