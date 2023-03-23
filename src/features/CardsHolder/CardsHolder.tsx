@@ -12,6 +12,7 @@ import next from './pic/next.png';
 import popularTitle from './pic/popularTitle.png';
 
 import { useQuery, gql } from '@apollo/client';
+import { CustomSlider } from '../shared/Slider/Slider';
 
 export interface ICard {
   photo: string
@@ -77,18 +78,7 @@ export const CardsHolder: React.FC<ICardsHolderProps> = ({ type, favoriteCards }
         type === 'main'
         ?
         <Box component='div' className='cards-holder-wrapper'>
-          <Box component='div' className='cards-holder-top'>
-            <Box component='div' className='cards-holder-title'><img src={popularTitle} alt=''/></Box>
-            <Box component='div' className='cards-holder-buttons'>
-              <Box component='div' className='cards-holder-button-prev'><img src={prev} alt=''/></Box>
-              <Box component='div' className='cards-holder-button-next'><img src={next} alt=''/></Box>
-            </Box>
-          </Box>
-          <Box component='div' className='cards-holder-field'>
-            {
-              cards.map( card => <Card key={card.id} currentCard={card}/>)
-            }
-          </Box>
+          <CustomSlider cards={cards}/>
           <Box component='div' className='cards-holder-switch-circle'>
             <Box>
               {
@@ -102,7 +92,7 @@ export const CardsHolder: React.FC<ICardsHolderProps> = ({ type, favoriteCards }
           <Box component='div' className='cards-holder-favorite-top'>
             <Box component='div' className='cards-holder-title'>Clear all</Box>
           </Box>
-          <Box component='div' className='cards-holder-field'>
+          <Box component='div' className='cards-holder-field' sx={{display: 'flex'}}>
             {
               favoriteCards && favoriteCardsWithPhoto?.map( card => <Card key={card.photo} currentId={card}/>)
             }

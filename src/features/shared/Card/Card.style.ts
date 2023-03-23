@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 export const StyledCard = styled.div`
 position: relative;
-width: 28%;
+/* width: 28%; */
 height: 572px;
 border: 1px solid #D3EAFF;
 max-width: 380px;
+margin: 0px .5rem;
 
 & .empty-width {
   width: 380px;

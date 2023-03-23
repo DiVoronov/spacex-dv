@@ -10,15 +10,15 @@ width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 5rem 3rem;
+  padding: 9rem 3rem;
   gap: 2rem;
 
-  & .cards-holder-field {
+  /* & .cards-holder-field {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-  }
+  } */
 
   & .cards-holder-top {
     display: flex;

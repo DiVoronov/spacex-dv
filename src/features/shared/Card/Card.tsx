@@ -35,7 +35,7 @@ export const Card: React.FC<ICardProps> = ({ currentCard, currentId }) => {
       {
         currentCard || currentId
         ?
-        <Box component='div' className={`card-wrapper ${currentId?.id ? '' : 'empty-width'}`}>
+        <Box component='div' className={`card-wrapper ${currentCard || currentId?.id ? '' : 'empty-width'}`}>
           <Box component='div' className='card-photo'><img src={currentCard ? currentCard.photo : currentId?.id ? currentId?.photo : ''} alt=''/></Box>
           <Box component='div' className='card-info'>
             <Box component='div' className='card-title'>{ currentCard ? currentCard.title : data?.rocket.name }</Box>
